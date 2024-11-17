@@ -1,0 +1,16 @@
+{
+  "build": {
+    "production": {
+      "android": {
+        "buildType": "apk", 
+        "distribution": "store"
+      }
+    },
+    "development": {
+      "android": {
+        "buildType": "apk", 
+        "distribution": "internal"
+      }
+    }
+  }
+}

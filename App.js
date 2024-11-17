@@ -1,20 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Hal1 from "./halaman/hal1";
+import Hal2 from "./halaman/hal2";
+import Hal3 from "./halaman/hal3";
+import Hal4 from "./halaman/hal4";
 
-export default function App() {
+const Stack = createNativeStackNavigator();
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Hal1" component={Hal1} options={{headerShown: false}}/>
+        <Stack.Screen name="Hal2" component={Hal2} />
+        <Stack.Screen name="Hal3" component={Hal3} />
+        <Stack.Screen name="Hal4" component={Hal4} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;

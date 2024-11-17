@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "App4",
+    "name": "App4", 
     "slug": "App4",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "version": "1.1.0", 
+    "orientation": "portrait", 
+    "icon": "./assets/icon.png", 
+    "userInterfaceStyle": "light", 
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "image": "./assets/splash.png", 
+      "resizeMode": "contain", 
       "backgroundColor": "#ffffff"
     },
     "ios": {
@@ -18,10 +18,22 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.rizkymaulana24.App4" 
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "be4a00e8-2b6f-481b-a7d5-9a3ae6ea0d4a"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/be4a00e8-2b6f-481b-a7d5-9a3ae6ea0d4a"
     }
   }
 }
